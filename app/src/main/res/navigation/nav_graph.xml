@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/home_screen"
         android:name="com.leomarkpaway.navigationcomponentandbottomnavigation.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_walletFragment"
@@ -16,7 +16,7 @@
     <fragment
         android:id="@+id/wallet_screen"
         android:name="com.leomarkpaway.navigationcomponentandbottomnavigation.WalletFragment"
-        android:label="fragment_wallet"
+        android:label="Wallet"
         tools:layout="@layout/fragment_wallet" >
         <action
             android:id="@+id/action_walletFragment_to_homeFragment"

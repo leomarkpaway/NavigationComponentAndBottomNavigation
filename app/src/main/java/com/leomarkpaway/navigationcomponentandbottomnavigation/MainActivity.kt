@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -14,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         val navButtons = findViewById<BottomNavigationView>(R.id.nav_buttons)
         val navController = findNavController(R.id.nav_host)
+
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.home_screen, R.id.wallet_screen))
+        setupActionBarWithNavController(navController, appBarConfiguration)
+
         navButtons.setupWithNavController(navController)
         
     }
